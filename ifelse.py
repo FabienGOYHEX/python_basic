@@ -26,7 +26,7 @@ match error:
         print('erreur serveur')
     case 400:
         print('Mauvaise requête')
-    case 404:
+    case 404 | 405 | 406:
         print('ressource nontrouvée')
     case _ : 
         print('error iconnue ')
