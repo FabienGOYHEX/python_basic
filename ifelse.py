@@ -20,9 +20,9 @@ else : print('Nope')
 
 #Match
 error = 404
-#
+
 match error:
-    case 500:
+   case 500:
         print('erreur serveur')
     case 400:
         print('Mauvaise requête')

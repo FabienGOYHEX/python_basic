@@ -10,3 +10,5 @@ print( counter)
 age = 0 
 while int(age) < 18 :
     age = input('Quel est votre age ? ')
+
+print (2%2)
