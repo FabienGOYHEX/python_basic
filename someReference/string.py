@@ -42,3 +42,6 @@ print(my_str.startswith('je'))  # => True / commence bien par je
 # SPLIT
 # => ['je', 'suis', 'une', 'chaine', 'de', 'caractère'] split la chaine au niveau des espaces | peut recevoir une valeur ex: ,
 print(my_str.split())
+
+# REPLACE
+my_str.replace(e, E)  # =>jE suis unE chainE dE caractèrE
