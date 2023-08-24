@@ -38,3 +38,7 @@ print(my_str.index('suis'))
 print(my_str.endswith('suis'))  # => False / ne finis pas par suis
 # STARTSWITH
 print(my_str.startswith('je'))  # => True / commence bien par je
+
+# SPLIT
+# => ['je', 'suis', 'une', 'chaine', 'de', 'caractère'] split la chaine au niveau des espaces | peut recevoir une valeur ex: ,
+print(my_str.split())
