@@ -19,16 +19,20 @@ while True:
     print(f"| vies : {game['player_life']}")
     letter = input("? => ")
     index_of_match_letter = secret_word.find(letter)
-    if index_of_match_letter != -1:
+
+    if game['player_life'] == 1:
+        print('you lose !')
+        break
+    elif new_word.count('_') == 1:
+        print('you win')
+        break
+    elif index_of_match_letter != -1:
         new_word[index_of_match_letter] = letter
-        print(str(new_word))
-"""
-    #for i in secret_word:
-        comparative_word_letter = i
-        if comparative_word_letter == letter:
-            print('yeah')
-        elif comparative_word_letter != letter:
-            player_life += 1
-        else:
-            print("C'est faux !")
-"""
+        game['starter_word'] = ''.join(new_word)
+        print(game['starter_word'])
+    elif index_of_match_letter == -1:
+        game['player_life'] = game['player_life'] - 1
+        game['starter_word'] = ''.join(new_word)
+        print(game['starter_word'])
+    else:
+        break
