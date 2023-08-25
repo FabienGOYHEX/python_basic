@@ -1,5 +1,5 @@
 a = [1, 2, 'hello', True, 5, ['a', 2]]
-
+b = [1, 2, 34, 5, 32, 543, 67, 82, 2, 70]
 #a[1] = 3
 # => [1, 3, 'hello', True, 5, ['a', 2]]
 
@@ -23,3 +23,10 @@ a.pop(0)  # on passe l'index de la valeur à suprimer
 # FIND A VALUE
 # a.index(value*, startIndex,endIndex)
 print(a)
+
+# SORT THE LIST
+
+# b.sort()# => [1, 2, 2, 5, 32, 34, 67, 70, 82, 543] !!! NE MODIFIE PAS LA LISTE
+c = sorted(b)
+print(b)
+print(c)
