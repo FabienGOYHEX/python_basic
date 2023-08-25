@@ -18,5 +18,8 @@ a.extend(['chien', 'chat'])
 # REMOVE
 a.remove('chat')  # on passe la valeur à suprimer
 a.pop(0)  # on passe l'index de la valeur à suprimer
-a.clear()  # on suprime toutes les valeurs
+# a.clear()  # on suprime toutes les valeurs contnues dans a
+
+# FIND A VALUE
+# a.index(value*, startIndex,endIndex)
 print(a)
