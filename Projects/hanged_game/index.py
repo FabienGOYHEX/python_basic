@@ -12,19 +12,23 @@ game = {
     "player_life": 9
 }
 print(secret_word.split())
-
 print(f"{game['starter_word']} | vies : {game['player_life']}")
 
+new_word = list(game['starter_word'])
 while True:
     print(f"| vies : {game['player_life']}")
     letter = input("? => ")
-    comparative_word_letter = ""
-    player_life = game['player_life']
-    for i in secret_word:
+    index_of_match_letter = secret_word.find(letter)
+    if index_of_match_letter != -1:
+        new_word[index_of_match_letter] = letter
+        print(str(new_word))
+"""
+    #for i in secret_word:
         comparative_word_letter = i
         if comparative_word_letter == letter:
             print('yeah')
+        elif comparative_word_letter != letter:
+            player_life += 1
         else:
-            player_life = player_life - 1
-
-    print(letter)
+            print("C'est faux !")
+"""
