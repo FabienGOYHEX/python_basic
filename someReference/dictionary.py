@@ -40,3 +40,13 @@ for key, value in my_dictionnary.items():
 # BON
 # adress
 #{'city': 'Paris'}
+
+# ///////////////////////SUPPRESSION D'ELEMENTS ///////////
+
+# crée une nouvelle paire clé valeur si la clé n'existe pas et update la value si elle existe
+my_dictionnary.update({'gender': 'male'})
+# pop() permet de supprimer la paire clé / valeur dont la clé est passée en argument.
+# popItem() permet de supprimer la dernière paire clé / valeur ajouté au dictionnaire.
+# update() prend en argument un itérable contenant des paires clé / valeur (dictionnaire, ou liste avec des tuples de deux éléments notamment) et met à jour le dictionnaire avec ces paires.
+# setDefault() permet d'insérer une paire clé / valeur si la clé n'existe pas, sinon elle renvoie simplement la valeur.
+print(my_dictionnary)
