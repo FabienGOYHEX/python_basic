@@ -7,6 +7,8 @@ my_dictionnary = {
         'city': 'Paris'
     }
 }
+my_new_dictinnary = dict(deco='vintage', tapis="blue", tYpe="house")
 print(my_dictionnary['adress']['city'])
+print(my_new_dictinnary)
 
 # Retourne une erreur si la key n'hexiste pas !!
