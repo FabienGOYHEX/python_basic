@@ -8,7 +8,10 @@ my_dictionnary = {
     }
 }
 my_new_dictinnary = dict(deco='vintage', tapis="blue", tYpe="house")
+
 print(my_dictionnary['adress']['city'])
 print(my_new_dictinnary)
 
+print(my_dictionnary.get('age'))
+#fucking_dictionnary = my_dictinnary.copy()
 # Retourne une erreur si la key n'hexiste pas !!
